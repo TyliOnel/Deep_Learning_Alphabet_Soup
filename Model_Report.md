@@ -1,19 +1,19 @@
 # Week 21 Deep Learning 
 ## Charity Funding Predictor
 
-**Overview**
+## **Overview**
 
 The aim of this project is to develop an algorithm utilizing machine learning and neural networks to predict whether applicants will succeed if funded by the fictional non-profit foundation, Alphabet Soup.
 
-**Process**
+## **Data Preprocessing**
 
 The CSV file contains data on over 34,000 organizations that have received funding from Alphabet Soup, along with several columns of metadata for each organization.
 
-**Preprocessing**
+### **Preprocessing**
 
 To prepare the data for analysis, I performed the following steps:
 
-Dropped non-beneficial columns.
+    - Dropped non-beneficial columns.
 
     - Analyzed the number of data points for each unique value in the APPLICATION_TYPE and CLASSIFICATION columns, which had more than 10 unique values.
 
@@ -29,15 +29,27 @@ Dropped non-beneficial columns.
 
 The preprocessing resulted in 44 features. The target variable was IS_SUCCESSFUL, and the data was divided into training and test subsets.
 
-**Compiling, Training, and Evaluating the Model**
+### Data Preprocessing Questions
 
-The objective was to achieve a predictive accuracy above 75%. I conducted seven official attempts using machine learning and neural network techniques. Each attempt resulted in an accuracy rate of approximately 72%, falling slightly short of the target accuracy. I changed the number of columns dropped, the cutoff points and the different amount of layers and neurons used.
+What variable(s) are the target(s) for your model?
+    - Target variable was the IS_SUCCESSFUL column
+What variable(s) are the features for your model?
+    - Every column that was not dropped were the features fed into the model
+What variable(s) should be removed from the input data because they are neither targets nor features?
+    - - 'EIN' & 'NAME'
+
+## **Compiling, Training, and Evaluating the Model**
+
+The objective was to achieve a predictive accuracy above 75%. I conducted seven official attempts using machine learning and neural network techniques. 
+Each attempt resulted in an accuracy rate of approximately 72%, falling slightly short of the target accuracy. 
 
 
 ### Results from each model attempt are detailed below:
 
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
-*ATTEMPT #1*
+
+#### *ATTEMPT #1*
 
 The first attempt (AlphabetSoupCharity_model_1.h5) resulted in an accuracy 
 score of 73.3%.
@@ -50,7 +62,7 @@ o layer2 = 30 neurons and ‘relu’ activation function
  
  ![alt text](/Accuracy_Charts/image.png)
   
- *ATTEMPT #2*
+ #### *ATTEMPT #2*
 
 The first attempt (AlphabetSoupCharity_model_2.h5) resulted in an accuracy 
 score of 73.7%. This was the highest accuracy score of the seven models.
@@ -64,7 +76,7 @@ o layer2 = 3 neurons and ‘relu’ activation function
 ![alt text](/Accuracy_Charts/image-1.png)
  
 
- *ATTEMPT #3*
+#### *ATTEMPT #3*
 
 The first attempt (AlphabetSoupCharity_model_3.h5) resulted in an accuracy 
 score of 73.6%.
@@ -78,7 +90,7 @@ o layer2 = 250 neurons and ‘relu’ activation function
 ![alt text](/Accuracy_Charts/image-2.png)
  
   
- *ATTEMPT #4*
+#### *ATTEMPT #4*
 
 The first attempt (AlphabetSoupCharity_model_4.h5) resulted in an accuracy 
 score of 72.4%. 
@@ -93,7 +105,7 @@ o layer3 = 10 neurons and 'sigmoid' activation function
 ![alt text](/Accuracy_Charts/image-3.png)
  
  
- *ATTEMPT #5*
+####  *ATTEMPT #5*
 
 The first attempt (AlphabetSoupCharity_model_5.h5) resulted in an accuracy 
 score of 72.3%.
@@ -108,7 +120,7 @@ o layer3 = 60 neurons and 'relu' activation function
 ![alt text](/Accuracy_Charts/image-4.png)
  
   
- *ATTEMPT #6*
+#### *ATTEMPT #6*
 
 The first attempt (AlphabetSoupCharity_model_6.h5) resulted in an accuracy 
 score of 61.7%. This was the lowest accuracy score of the seven models.
@@ -123,7 +135,7 @@ o layer3 = 3 neurons and 'sigmoid' activation function
  ![alt text](/Accuracy_Charts/image-5.png)
  
 
- *ATTEMPT #7*
+ ####  *ATTEMPT #7*
 
 The first attempt (AlphabetSoupCharity_model_7.h5) resulted in an accuracy 
 score of 61.9% 
@@ -135,7 +147,13 @@ o layer2 = 30 neurons and ‘relu’ activation function
 • epochs = 100 
  
 ![alt text](/Accuracy_Charts/image-6.png)
- 
+
+
+### Were you able to achieve the target model performance?
+    No (did not reach 75%)
+
+### What steps did you take in your attempts to increase model performance?
+    I changed the number of columns dropped, the cutoff points and the different amount of layers and neurons used.
 
 ## Summary
 
