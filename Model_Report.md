@@ -157,4 +157,4 @@ o layer2 = 30 neurons and ‘relu’ activation function
 
 ## Summary
 
-Despite seven attempts, the model was unable to achieve a predictive accuracy higher than 73.7%. The only big difference I was able to see in the different models was when i dropped extra columns the model ran faster and was less accurate. Changing the the cutoff points and the different amount of layers had little to no affect on the accuracy result for the model. I recommend exploring alternative classification models to better predict the success of applicants funded by Alphabet Soup.
+Despite seven attempts, the model was unable to achieve a predictive accuracy higher than 73.7%. The only big difference I was able to see in the different models was when I dropped extra columns the model ran faster and was less accurate. Changing the the cutoff points and the different amount of layers had little to no affect on the accuracy result for the model. Perhaps increasing the data or amending the approach, using different functions within Keras and Tensorflow on the appropriate data will better predict the success of applicants funded by Alphabet Soup.
